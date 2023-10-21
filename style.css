@@ -877,3 +877,8 @@ body::-webkit-scrollbar-thumb:hover{background: hsl(0, 0%, 70%);}
     font-size: 13px;
 }
 
+.sidebar .price-box .price {
+    font-size: var(--fs-7);
+    font-weight: var(--weight-600);
+    color: var(--davys-green);
+}
