@@ -1485,3 +1485,112 @@ body::-webkit-scrollbar-thumb:hover{background: hsl(0, 0%, 70%);}
 
 
 /* FOOTER */
+footer {
+    background: var(--eerie-black);
+    padding: 30px 0;
+}
+
+.footer-category{
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--onyx);
+}
+
+.footer-category-title {
+    color: var(--salmon-pink);
+    font-size: var(--fs-6);
+    font-weight: var(--weight-600);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer-category-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 3px;
+    margin-bottom: 15px
+}
+
+.category-box-title {
+    color: var(--spanish-gray);
+    font-size: var(--fs-8);
+    font-weight: var(--weight-600);
+    text-transform: uppercase;
+}
+
+.footer-category-link {
+    position: relative;
+    color: var(--sonic-silver);
+    font-size: var(--fs-7);
+    text-transform: capitalize;
+    transition: var(--transition-timing);
+}
+
+.footer-category-link:hover { color: var(--spanish-gray); }
+
+.footer-category-link:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    right: -10px;
+    background: var(--sonic-silver);
+    width: 1px;
+    height: 15px;
+}
+
+
+/* footer nav */
+
+.footer-nav {
+    border-bottom: 1px solid var(--onyx);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-nav-list:not(:last-child) {margin-bottom: 20px; }
+
+.footer-nav .nav-title {
+    position: relative;
+    color: var(--white);
+    font-size: var(--fs-7);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.footer-nav .nav-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--salmon-pink);
+    width: 60px;
+    height: 1px;
+}
+
+.footer-nav-item { padding: 3px 0; }
+
+.footer-nav-link,
+.footer-nav-item {
+    width: max-content;
+    color: var(--sonic-silver);
+    font-size: var(--fs-7);
+    text-transform: capitalize;
+    transition: var(--transition-timing);
+}
+
+.footer-nav-link:hover { color: var(--salmon-pink); }
+
+.footer-nav-item.flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-nav-item .content {
+    font-style: normal;
+    margin-bottom: 5px;
+}
