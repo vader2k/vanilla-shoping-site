@@ -80,7 +80,6 @@ input::placeholder{font: inherit;}
 
 body {
     background: var(--white);
-    padding-bottom:60px ;
 }
 
 /* scrollbar style */
@@ -1593,4 +1592,45 @@ footer {
 .footer-nav-item .content {
     font-style: normal;
     margin-bottom: 5px;
+}
+
+.footer-nav-item .icon-box {
+    color: var(--sonic-silver);
+    font-size: 25px;
+}
+
+.footer-nav-item .icon-box ion-icon { --ionicon-stroke-width: 30px }
+
+.footer-nav .social-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-link .footer-nav-link {font-size: 25px;}
+
+.footer-bottom {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.payment-img {
+    max-width: 335px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    color: var(--sonic-silver);
+    font-size: var(--fs-8);
+    font-weight: var(--weight-500);
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+}
+
+.copyright a {
+    display: inline;
+    color: inherit;
 }
